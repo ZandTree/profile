@@ -92,6 +92,7 @@ section projects
     height: 100%;
     position: absolute;
     border-radius: 5px;
+    cursor: pointer;
     /* display: flex;
     justify-content: center;
     align-items: left;
