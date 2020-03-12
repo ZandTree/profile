@@ -87,49 +87,41 @@ section projects
     height:480px;
     position: relative;
 }
+
 .card figure{
     width: 100%;
     height: 100%;
     position: absolute;
     border-radius: 5px;
     cursor: pointer;
-    /* display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column; */
     padding-left: 1rem;
     padding-bottom: 1rem;
+    transition: transform .3s;
+    /* Note: display flex can't be because we need display:none */
 }
-.let3{
-
-    font-weight: 100;
-    border-bottom: 2px solid white;
-    padding-bottom: 0.5rem;
-    margin:.5rem 1rem 1rem 0;
-    text-align: center;
+.card figure:hover {
+    transform: scale(1.05);
 }
+/* Note transform-style:preserve-3d; doen't work in IE */
 .card{
     width:100%;
     height:100%;
     /* transition: transform 1s ease-in-out;
     transform-style: preserve-3d;
-    -ms-transform-style: flat; */
+    -ms-transform-style: flat; ???*/
 }
 /* .card-container:hover .card{
     transform: rotateY(180deg);
     -ms-transform: rotateY( 180deg );
 } */
+
 .card .front{
     background: #ee5b2b;
     text-align: center;
     padding-top:5rem;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
+    /* Note: display flex can't be because we need display:none */
     padding-left: 0;
     letter-spacing: 3px;
-
 }
 .front h3{
     font-weight: 100;
@@ -137,11 +129,15 @@ section projects
 }
 .card .back{
     background: #2b652b;
-
-
     /*transform: rotateY(180deg); */
-
     letter-spacing: 3px;
+}
+.let3{
+    font-weight: 100;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+    margin:.5rem 1rem 1rem 0;
+    text-align: center;
 }
 .shift {
     padding-left:2rem;
