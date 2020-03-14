@@ -9,3 +9,12 @@ back.on('click',function(){
     front.removeClass('invisibale');
     }
 )
+
+const container = $(".container");
+const photo = $(".img");
+const letters = $(".letters");
+
+container.hover(function(){
+    photo.toggleClass('change');
+    letters.toggleClass('visible');
+})
