@@ -5,14 +5,16 @@
         <title>portfolio page</title>
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
         <link rel="stylesheet" href="main.css">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif|Source+Sans+Pro&display=swap" rel="stylesheet">
     </head>
     <body>
 
         <div class="box">
             <img src="img/ava_cat.PNG" class="box-image" alt="avatar">
             <div class="info">
-                <h1>Tanja Rietveldt</h1>
-                <h5 class="black">Web Developer - Full Stack</h5>
+                <h1 class="white">Tanja Rietveldt</h1>
+                <h5 class="white">Web Developer - Full Stack</h5>
                 <p>Open minded and resourceful starter in programming.</p>
                 <p>Passionate about web development in python (django).</p>
                 <p>Have experience setting up servers (Digital Ocean, Linode).</p>
@@ -21,7 +23,7 @@
                 <p>I'm optimistic and get on easily with people of all ages.
                 <p>Like dry humor.</p>
                 <p>Speak English, Dutch, Russian.</p>
-                <ul>
+                <ul class="white">
                     <h3>My projects</h3>
                     <li><a href="https://www.memoryoverflow.nl/">Project Blog</a></li>
                     <li><a href="https://www.houseofmydream.nl/">Project E-commerce</a></li>
@@ -121,9 +123,9 @@
                 <div class="row">
                     <div class="col">
                         <div class="testimonial">
-                            <div class="container">
-                                <img src="img/nin.png" alt="person" class="img">
-                                <p class="letters">django</p>
+                            <div class="containerLeft">
+                                <img src="img/nin.png" alt="person" class="imgLeft">
+                                <p class="lettersLeft">django</p>
                             </div>
                             <div class="function">
                                 <p>backend-dev</p>
@@ -143,9 +145,9 @@
                     </div>
                     <div class="col">
                         <div class="testimonial">
-                            <div class="container">
-                                <img src="img/nin.png" alt="person" class="img">
-                                <p class="letters">vue.js</p>
+                            <div class="containerRight">
+                                <img src="img/nin.png" alt="person" class="imgRight">
+                                <p class="lettersRight">vue.js</p>
                             </div>
                             <div class="function">
                                 <p>frontend-dev</p>
@@ -155,6 +157,36 @@
                 </div>
             </div>
         </div>
+        <section class="contact">
+            <form name="contact" method="POST" data-netlify="true" class="contact-form">
+                <div class="form-item">
+                    <label>Your Name: <input type="text" name="name" class="inp" autofocus/></label>
+                </div>
+                <div class="form-item">
+                    <label>Your Email: <input type="email" name="email" class="inp"/></label>
+                </div>
+                <div class="form-item">
+                    <label>Your Message: <textarea name="message" rows="15" cols="30" class="inp"></textarea></label>
+                </div>
+                <!-- <div class="form-item">
+                  <input type="file" name="myfile" id="myfile" placeholder="Upload file">
+                </div> -->
+                <div class="form-item">
+                    <div class="" data-netlify-recaptcha="true">
+                   </div>
+                </div>
+                <div class="" data-netlify-recaptcha="true" type="hidden">
+                </div>
+                <div class="form-item">
+                    <button type="submit" class="sendMsg">Send</button>
+                </div>
+            </form>
+        </section>
+        <section class="contact">
+            <p>Image: www.pexel.com (Niels Hunnersen)</p>
+            <p>Favicon: www.favicon.io</p>
+        </section>
+        <button onclick="topFunction()" id="toTop" title="Go to top">Top</button>
         <script
           src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
           integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
